@@ -8,7 +8,7 @@ const PricingSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Pourquoi seulement <span className="text-primary">50€</span> pour un site vitrine ?
+            Créer son site en seulement <span className="text-primary">5 minutes</span>, vraiment ?
           </h2>
           <p className="text-muted-foreground max-w-3xl mx-auto text-lg">
             Créer un site web avec lovable ne prend que quelques minutes ! 
@@ -25,8 +25,7 @@ const PricingSection = () => {
                     <Clock className="h-8 w-8 text-primary" />
                   </div>
                   <h3 className="text-2xl font-bold mb-2">Site One-Page</h3>
-                  <div className="text-4xl font-bold text-primary mb-2">50€</div>
-                  <p className="text-muted-foreground">HT</p>
+                  <div className="text-4xl font-bold text-primary mb-2">1 heure</div>
                 </div>
                 <ul className="space-y-3 text-left">
                   <li className="flex items-center gap-2">
@@ -60,8 +59,7 @@ const PricingSection = () => {
                     <Calendar className="h-8 w-8 text-primary" />
                   </div>
                   <h3 className="text-2xl font-bold mb-2">Site 3 Pages</h3>
-                  <div className="text-4xl font-bold text-primary mb-2">100€</div>
-                  <p className="text-muted-foreground">HT</p>
+                  <div className="text-4xl font-bold text-primary mb-2">2 heures</div>
                 </div>
                 <ul className="space-y-3 text-left">
                   <li className="flex items-center gap-2">

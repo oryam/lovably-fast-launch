@@ -64,24 +64,23 @@ const InfoSection = () => {
                   <strong className="text-foreground">Aucune formation incluse</strong> - Site livré clé en main.
                 </p>
                 <p>
-                  <strong className="text-foreground">Support à 75€ HT/heure</strong> - Accompagnement sur demande.
+                  <strong className="text-foreground">Support en option</strong> - Accompagnement sur demande.
                 </p>
               </div>
             </CardContent>
           </Card>
-
-          <div className="text-center mt-12">
-            <Button 
-              size="lg" 
-              className="bg-gradient-to-r from-primary to-primary-glow hover:shadow-lg hover:scale-105 transition-all duration-300 px-8 py-6 text-lg font-semibold"
-              asChild
-            >
-              <a href="https://calendly.com/webprofr/reserver" className="flex items-center gap-2">
-                <Calendar className="h-5 w-5" />
-                Réserver votre rendez-vous
-              </a>
-            </Button>
-          </div>
+        </div>
+        <div className="text-center mt-12">
+          <Button 
+            size="lg" 
+            className="bg-gradient-to-r from-primary to-primary-glow hover:shadow-lg hover:scale-105 transition-all duration-300 px-8 py-6 text-lg font-semibold"
+            asChild
+          >
+            <a href="https://calendly.com/webprofr/reserver" className="flex items-center gap-2">
+              <Calendar className="h-5 w-5" />
+              Réserver votre rendez-vous
+            </a>
+          </Button>
         </div>
       </div>
     </section>

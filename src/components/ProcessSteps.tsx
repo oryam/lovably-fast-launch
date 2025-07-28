@@ -51,6 +51,9 @@ const ProcessSteps = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Les <span className="text-primary">étapes</span>
           </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Cliquer sur les icônes pour voir les détails.
+          </p>
         </div>
 
         {/* Desktop: Horizontal Timeline */}
@@ -71,7 +74,7 @@ const ProcessSteps = () => {
                   style={{ zIndex: 10 }}
                 >
                   {/* Step content */}
-                  <div className={`${index % 2 === 0 ? 'mb-8' : 'mt-8'} text-center max-w-32`}>
+                  <div className={`${index % 2 === 0 ? 'mb-8' : 'mt-12'} text-center max-w-32`}>
                     <h3 className={`font-semibold text-sm transition-colors ${
                       activeStep === index ? 'text-primary' : 'text-muted-foreground'
                     }`}>
