@@ -12,57 +12,60 @@ const InfoSection = () => {
           </h2>
         </div>
 
-        <div className="max-w-4xl mx-auto space-y-6">
-          <Card className="border-primary/20">
-            <CardContent className="p-6">
-              <div className="flex items-start gap-4">
-                <Info className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-                <div className="space-y-4 text-sm text-muted-foreground leading-relaxed">
-                  <p>
-                    <strong className="text-foreground">Le site est généré avec lovable.io.</strong> LA référence pour créer des sites rapidement avec un design moderne et appliquant toutes les bonnes pratiques et les standards du web.
-                  </p>
-                  <p>
-                    <strong className="text-foreground">Le site généré utilise le langage HTML/CSS/JS et ReactJs.</strong>
-                  </p>
-                  <p>
-                    <strong className="text-foreground">Google indexe et référence les sites dynamiques (contenu généré par js).</strong> Celui qui vous dira le contraire n'est pas à jour.
-                  </p>
-                </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <Card className="border-primary/20 hover:shadow-lg transition-all duration-300 hover:border-primary/40 group">
+            <CardContent className="p-6 text-center">
+              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
+                <Info className="h-8 w-8 text-primary" />
+              </div>
+              <h3 className="font-bold text-lg mb-3 text-foreground">Technologie moderne</h3>
+              <div className="space-y-3 text-sm text-muted-foreground leading-relaxed">
+                <p>
+                  <strong className="text-foreground">Site généré avec lovable.io</strong> - LA référence pour créer des sites rapidement avec un design moderne.
+                </p>
+                <p>
+                  <strong className="text-foreground">HTML/CSS/JS et ReactJs</strong> - Technologies standards du web.
+                </p>
+                <p>
+                  <strong className="text-foreground">Google indexe les sites dynamiques</strong> - Référencement optimal garanti.
+                </p>
               </div>
             </CardContent>
           </Card>
 
-          <Card className="border-primary/20">
-            <CardContent className="p-6">
-              <div className="flex items-start gap-4">
-                <Github className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-                <div className="space-y-4 text-sm text-muted-foreground leading-relaxed">
-                  <p>
-                    <strong className="text-foreground">L'hébergement gratuit se fait sur github (repository gratuit public)</strong>
-                  </p>
-                  <p>
-                    Il est recommandé d'avoir un compte mail Google. Un compte client OVH sera à créer, ainsi qu'un compte sur lovable.io, un compte sur github.com et un accès. Seul le nom de domaine sera à commander à vos frais.
-                  </p>
-                </div>
+          <Card className="border-primary/20 hover:shadow-lg transition-all duration-300 hover:border-primary/40 group">
+            <CardContent className="p-6 text-center">
+              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
+                <Github className="h-8 w-8 text-primary" />
+              </div>
+              <h3 className="font-bold text-lg mb-3 text-foreground">Hébergement gratuit</h3>
+              <div className="space-y-3 text-sm text-muted-foreground leading-relaxed">
+                <p>
+                  <strong className="text-foreground">GitHub repository public gratuit</strong> - Hébergement fiable et sécurisé.
+                </p>
+                <p>
+                  Comptes nécessaires : Gmail, OVH, Lovable.io, GitHub. Seul le nom de domaine est à vos frais.
+                </p>
               </div>
             </CardContent>
           </Card>
 
-          <Card className="border-primary/20">
-            <CardContent className="p-6">
-              <div className="flex items-start gap-4">
-                <Shield className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-                <div className="space-y-4 text-sm text-muted-foreground leading-relaxed">
-                  <p>
-                    <strong className="text-foreground">Le nom de domaine est réservé de préférence chez OVH</strong> qui facilite la gestion des contacts et administrateur. Le nom de domaine pourra être réservé à votre place si souhaité et l'accès total vous sera transmis ensuite.
-                  </p>
-                  <p>
-                    <strong className="text-foreground">Aucun guide, ni formation n'est inclus dans cette offre</strong>
-                  </p>
-                  <p>
-                    <strong className="text-foreground">Possibilité d'ajout de contenu au site ou d'accompagnement par la suite à partir de 75€ HT/heure.</strong>
-                  </p>
-                </div>
+          <Card className="border-primary/20 hover:shadow-lg transition-all duration-300 hover:border-primary/40 group">
+            <CardContent className="p-6 text-center">
+              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
+                <Shield className="h-8 w-8 text-primary" />
+              </div>
+              <h3 className="font-bold text-lg mb-3 text-foreground">Propriété totale</h3>
+              <div className="space-y-3 text-sm text-muted-foreground leading-relaxed">
+                <p>
+                  <strong className="text-foreground">Nom de domaine chez OVH</strong> - Gestion simplifiée des contacts.
+                </p>
+                <p>
+                  <strong className="text-foreground">Aucune formation incluse</strong> - Site livré clé en main.
+                </p>
+                <p>
+                  <strong className="text-foreground">Support à 75€ HT/heure</strong> - Accompagnement sur demande.
+                </p>
               </div>
             </CardContent>
           </Card>

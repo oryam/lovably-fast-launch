@@ -1,7 +1,11 @@
+import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle, Eye, Code, Globe, Phone, Palette, FileText } from "lucide-react";
 
 const ProcessSteps = () => {
+  const [activeStep, setActiveStep] = useState(0);
+  const [showTooltip, setShowTooltip] = useState<number | null>(null);
+
   const steps = [
     {
       icon: Phone,
@@ -49,24 +53,110 @@ const ProcessSteps = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {steps.map((step, index) => (
-            <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-primary/20 hover:border-primary/40">
-              <CardContent className="p-6">
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0">
-                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                      <step.icon className="h-6 w-6 text-primary" />
-                    </div>
+        {/* Desktop: Horizontal Timeline */}
+        <div className="hidden md:block">
+          <div className="relative">
+            {/* Horizontal line */}
+            <div className="absolute top-20 left-0 right-0 h-0.5 bg-primary/30"></div>
+            
+            {/* Steps */}
+            <div className="flex justify-between items-start relative">
+              {steps.map((step, index) => (
+                <div 
+                  key={index} 
+                  className={`flex flex-col items-center cursor-pointer transition-all duration-300 ${
+                    index % 2 === 0 ? 'flex-col' : 'flex-col-reverse'
+                  }`}
+                  onClick={() => setActiveStep(index)}
+                  style={{ zIndex: 10 }}
+                >
+                  {/* Step content */}
+                  <div className={`${index % 2 === 0 ? 'mb-8' : 'mt-8'} text-center max-w-32`}>
+                    <h3 className={`font-semibold text-sm transition-colors ${
+                      activeStep === index ? 'text-primary' : 'text-muted-foreground'
+                    }`}>
+                      {step.title}
+                    </h3>
                   </div>
-                  <div>
-                    <h3 className="font-semibold text-lg mb-2">{step.title}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>
+                  
+                  {/* Step circle */}
+                  <div className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 ${
+                    activeStep === index 
+                      ? 'bg-primary text-primary-foreground scale-110' 
+                      : 'bg-background border-2 border-primary/30 hover:border-primary/60'
+                  }`}>
+                    <step.icon className="h-6 w-6" />
                   </div>
                 </div>
-              </CardContent>
-            </Card>
-          ))}
+              ))}
+            </div>
+          </div>
+
+          {/* Detail section */}
+          <Card className="mt-16 border-primary/20">
+            <CardContent className="p-8">
+              <div className="flex items-start gap-6">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  {(() => {
+                    const IconComponent = steps[activeStep].icon;
+                    return <IconComponent className="h-8 w-8 text-primary" />;
+                  })()}
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold mb-4">{steps[activeStep].title}</h3>
+                  <p className="text-muted-foreground leading-relaxed text-lg">
+                    {steps[activeStep].description}
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* Mobile: Vertical Timeline with Tooltips */}
+        <div className="md:hidden">
+          <div className="relative">
+            {/* Vertical line */}
+            <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-primary/30"></div>
+            
+            {/* Steps */}
+            <div className="space-y-8">
+              {steps.map((step, index) => (
+                <div 
+                  key={index}
+                  className="relative flex items-center cursor-pointer"
+                  onClick={() => setShowTooltip(showTooltip === index ? null : index)}
+                >
+                  {/* Step circle */}
+                  <div className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 relative z-10 ${
+                    showTooltip === index 
+                      ? 'bg-primary text-primary-foreground scale-110' 
+                      : 'bg-background border-2 border-primary/30'
+                  }`}>
+                    <step.icon className="h-6 w-6" />
+                  </div>
+                  
+                  {/* Step title */}
+                  <div className="ml-6">
+                    <h3 className={`font-semibold transition-colors ${
+                      showTooltip === index ? 'text-primary' : 'text-foreground'
+                    }`}>
+                      {step.title}
+                    </h3>
+                  </div>
+
+                  {/* Tooltip */}
+                  {showTooltip === index && (
+                    <div className="absolute left-20 top-0 bg-background border border-primary/20 rounded-lg p-4 shadow-lg max-w-xs animate-fade-in z-20">
+                      <p className="text-sm text-muted-foreground leading-relaxed">
+                        {step.description}
+                      </p>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
