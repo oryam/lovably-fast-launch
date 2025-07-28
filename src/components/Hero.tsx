@@ -1,9 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, Star } from "lucide-react";
+import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-background via-primary/5 to-primary/10 py-20 md:py-32">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-5"
+        style={{ backgroundImage: `url(${heroBg})` }}
+      ></div>
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-20"></div>
       
       <div className="container relative mx-auto px-4">
