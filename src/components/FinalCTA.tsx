@@ -44,9 +44,9 @@ const FinalCTA = () => {
               className="bg-white text-primary hover:bg-white/90 hover:scale-105 transition-all duration-300 px-8 py-6 text-lg font-semibold"
               asChild
             >
-              <a href="#" className="flex items-center gap-2">
+              <a href="https://calendly.com/webprofr/reserver" className="flex items-center gap-2">
                 <Calendar className="h-5 w-5" />
-                Réserver votre rendez-vous maintenant
+                Réserver votre rendez-vous
                 <ArrowRight className="h-5 w-5" />
               </a>
             </Button>

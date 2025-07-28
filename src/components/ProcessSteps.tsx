@@ -47,14 +47,6 @@ const ProcessSteps = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Les <span className="text-primary">étapes</span>
           </h2>
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <div className="flex gap-1">
-              {[...Array(5)].map((_, i) => (
-                <CheckCircle key={i} className="h-5 w-5 fill-primary text-primary" />
-              ))}
-            </div>
-            <span className="text-sm text-muted-foreground">(défiler ⭐)</span>
-          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

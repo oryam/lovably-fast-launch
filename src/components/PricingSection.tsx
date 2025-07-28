@@ -11,7 +11,7 @@ const PricingSection = () => {
             Pourquoi seulement <span className="text-primary">50€</span> pour un site vitrine ?
           </h2>
           <p className="text-muted-foreground max-w-3xl mx-auto text-lg">
-            À part le temps des 2 rdv, créer un site web avec lovable ne prend que quelques minutes ! 
+            Créer un site web avec lovable ne prend que quelques minutes ! 
             Ce n'est pas une illusion. Les technologies rendent la création beaucoup plus simple quand cela est bien utilisé.
           </p>
         </div>
@@ -99,7 +99,7 @@ const PricingSection = () => {
               className="bg-gradient-to-r from-primary to-primary-glow hover:shadow-lg hover:scale-105 transition-all duration-300 px-8 py-6 text-lg font-semibold"
               asChild
             >
-              <a href="#" className="flex items-center gap-2">
+              <a href="https://calendly.com/webprofr/reserver" className="flex items-center gap-2">
                 <Calendar className="h-5 w-5" />
                 Réserver votre rendez-vous
               </a>
