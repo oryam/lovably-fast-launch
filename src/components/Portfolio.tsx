@@ -4,10 +4,10 @@ import { ExternalLink } from "lucide-react";
 const Portfolio = () => {
   const projects = [
     {
-      title: "Sweetless Landing",
-      url: "https://sweetless-landing.lovable.app",
-      image: "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400&h=300&fit=crop&crop=center",
-      description: "Site vitrine moderne pour une marque de confiseries sans sucre"
+      title: "Hair Salon Home",
+      url: "https://hairsalon-home.lovable.app",
+      image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400&h=300&fit=crop&crop=center",
+      description: "Site web élégant pour salon de coiffure"
     },
     {
       title: "Pet Sitter Search",
@@ -16,10 +16,10 @@ const Portfolio = () => {
       description: "Plateforme de recherche de garde d'animaux"
     },
     {
-      title: "Hair Salon Home",
-      url: "https://hairsalon-home.lovable.app",
-      image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400&h=300&fit=crop&crop=center",
-      description: "Site web élégant pour salon de coiffure"
+      title: "Sweetless Landing",
+      url: "https://sweetless-landing.lovable.app",
+      image: "https://images.unsplash.com/photo-1622484212850-eb596d769edc?w=400&h=300&fit=crop&crop=center",
+      description: "Site vitrine moderne pour une marque de confiseries sans sucre"
     },
     {
       title: "Digital Services",
@@ -28,10 +28,10 @@ const Portfolio = () => {
       description: "Agence de services numériques"
     },
     {
-      title: "Greenify",
-      url: "https://greenify.lovable.app",
+      title: "Green Scape",
+      url: "https://greenscape.startinup.ovh",
       image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop&crop=center",
-      description: "Plateforme écologique et durable"
+      description: "Site vitrine pour paysagiste"
     },
     {
       title: "Restaurant Moderne",
@@ -46,10 +46,10 @@ const Portfolio = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Nos <span className="text-primary">réalisations</span>
+            Exemples de <span className="text-primary">maquettes</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Découvrez quelques exemples de sites web créés rapidement avec notre méthode
+            Découvrez quelques exemples de sites fictifs créés rapidement avec notre solution.
           </p>
         </div>
 
