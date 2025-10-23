@@ -6,55 +6,55 @@ import { Button } from "@/components/ui/button";
 const TestimonialsCarousel = () => {
   const testimonials = [
     {
-      name: "Marie Dubois",
+      name: "Marie D.",
       role: "Propriétaire de salon de coiffure",
       content: "Service exceptionnel ! Mon site web a été créé en 30 minutes exactement comme promis. Le design est moderne et professionnel.",
       rating: 5
     },
     {
-      name: "Pierre Martin",
+      name: "Pierre M.",
       role: "Consultant freelance",
       content: "Incroyable rapport qualité-prix. Pour 50€, j'ai obtenu un site web que j'aurais payé 10 fois plus cher ailleurs.",
       rating: 5
     },
     {
-      name: "Sophie Laurent",
+      name: "Sophie L.",
       role: "Artisan boulangère",
       content: "Processus très fluide, équipe à l'écoute. Mon site est en ligne et mes clients peuvent facilement me trouver.",
       rating: 5
     },
     {
-      name: "Thomas Leroy",
+      name: "Thomas L.",
       role: "Coach sportif",
       content: "Parfait pour commencer ! Le fait d'avoir accès au code source est un vrai plus pour l'évolution future.",
       rating: 5
     },
     {
-      name: "Claire Moreau",
+      name: "Claire M.",
       role: "Photographe",
       content: "Design épuré et moderne qui met parfaitement en valeur mon portfolio. Exactement ce que je cherchais.",
       rating: 5
     },
     {
-      name: "David Bernard",
+      name: "David B.",
       role: "Restaurant",
       content: "Site responsive et rapide. Mes clients peuvent maintenant réserver en ligne facilement.",
       rating: 5
     },
     {
-      name: "Anne Petit",
+      name: "Anne P.",
       role: "Thérapeute",
       content: "Service professionnel et accompagnement personnalisé. Je recommande vivement !",
       rating: 5
     },
     {
-      name: "Marc Rousseau",
+      name: "Marc R.",
       role: "Architecte",
       content: "Qualité exceptionnelle pour le prix. Mon site reflète parfaitement mon activité.",
       rating: 5
     },
     {
-      name: "Julie Garnier",
+      name: "Julie G.",
       role: "Fleuriste",
       content: "Très satisfaite du résultat. Le processus est simple et le rendu professionnel.",
       rating: 5
@@ -89,10 +89,10 @@ const TestimonialsCarousel = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Ce que disent nos <span className="text-primary">clients</span>
+            Imaginez <span className="text-primary">votre site</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Découvrez les témoignages de nos clients satisfaits
+            Vous pourriez être Marie, David, Pierre ou Sophie.
           </p>
         </div>
 

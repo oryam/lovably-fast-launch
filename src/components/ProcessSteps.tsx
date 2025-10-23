@@ -25,7 +25,7 @@ const ProcessSteps = () => {
     {
       icon: CheckCircle,
       title: "Acceptation",
-      description: "Après acceptation réciproque et règlement de la prestation de 50€ H.T., ou 100€ H.T., livraison de votre site web"
+      description: "Après acceptation réciproque et règlement de la prestation, livraison de votre site web"
     },
     {
       icon: Code,

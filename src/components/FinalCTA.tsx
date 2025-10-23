@@ -35,7 +35,7 @@ const FinalCTA = () => {
 
           <div className="space-y-4">
             <p className="text-white font-semibold">
-              Ce service est disponible uniquement en juillet et août 2025.
+              Ce service est disponible en quantité limitée et selon certaines périodes.
             </p>
             
             <Button 
